@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>idonce Style Guide</title>
+<style>
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-400.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/inter-500.woff2) format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/space-grotesk-700.woff2) format('woff2')}
+
+:root {
+  --black: #0a0a0a;
+  --white: #fafaf9;
+  --surface: #ffffff;
+  --purple: #7c3aed;
+  --purple-light: #ede9fe;
+  --purple-muted: #c4b5fd;
+  --green: #22c55e;
+  --green-light: #dcfce7;
+  --grey: #a8a29e;
+  --grey-light: #e7e5e4;
+  --subtle-bg: #f5f5f4;
+  --error: #ef4444;
+  --warning: #f59e0b;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'SF Mono', Consolas, monospace;
+  --radius-pill: 50px;
+  --radius-card: 16px;
+  --radius-sm: 10px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box }
+body { font-family: var(--font-body); color: var(--black); background: var(--white); -webkit-font-smoothing: antialiased; line-height: 1.7 }
+a { color: var(--purple); text-decoration: none }
+
+.guide { max-width: 860px; margin: 0 auto; padding: 48px 28px 80px }
+.guide h1 { font-family: var(--font-display); font-size: 48px; font-weight: 700; letter-spacing: -2px; text-transform: uppercase; margin-bottom: 4px }
+.guide h1 span { color: var(--purple) }
+.guide .sub { color: var(--grey); font-size: 15px; margin-bottom: 56px }
+.section { margin-bottom: 64px }
+.section-title { font-family: var(--font-display); font-size: 20px; font-weight: 700; letter-spacing: -0.5px; text-transform: uppercase; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--grey-light) }
+.note { font-size: 13px; color: var(--grey); margin-top: 8px; line-height: 1.5 }
+.row { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start }
+.col { flex: 1; min-width: 200px }
+</style>
+</head>
+<body>
+<div class="guide">
+
+<h1>Style <span>Guide</span></h1>
+<p class="sub">Design reference for idonce — web and mobile.</p>
+
+<!-- 1. Colors -->
+<div class="section">
+  <div class="section-title">1. Colors</div>
+  <div class="row">
+    <div style="text-align:center">
+      <div style="width:80px;height:80px;border-radius:12px;background:var(--black);margin:0 auto 8px"></div>
+      <div style="font-size:13px;font-weight:500">Black</div>
+      <div style="font-size:11px;color:var(--grey)">#0a0a0a</div>
+    </div>
+    <div style="text-align:center">
+      <div style="width:80px;height:80px;border-radius:12px;background:var(--purple);margin:0 auto 8px"></div>
+      <div style="font-size:13px;font-weight:500">Purple</div>
+      <div style="font-size:11px;color:var(--grey)">#7c3aed</div>
+    </div>
+    <div style="text-align:center">
+      <div style="width:80px;height:80px;border-radius:12px;background:var(--purple-light);margin:0 auto 8px;border:1px solid var(--purple-muted)"></div>
+      <div style="font-size:13px;font-weight:500">Purple Light</div>
+      <div style="font-size:11px;color:var(--grey)">#ede9fe</div>
+    </div>
+    <div style="text-align:center">
+      <div style="width:80px;height:80px;border-radius:12px;background:var(--green);margin:0 auto 8px"></div>
+      <div style="font-size:13px;font-weight:500">Green</div>
+      <div style="font-size:11px;color:var(--grey)">#22c55e</div>
+    </div>
+    <div style="text-align:center">
+      <div style="width:80px;height:80px;border-radius:12px;background:var(--green-light);margin:0 auto 8px;border:1px solid #86efac"></div>
+      <div style="font-size:13px;font-weight:500">Green Light</div>
+      <div style="font-size:11px;color:var(--grey)">#dcfce7</div>
+    </div>
+    <div style="text-align:center">
+      <div style="width:80px;height:80px;border-radius:12px;background:var(--error);margin:0 auto 8px"></div>
+      <div style="font-size:13px;font-weight:500">Error</div>
+      <div style="font-size:11px;color:var(--grey)">#ef4444</div>
+    </div>
+  </div>
+  <div style="margin-top:24px">
+    <div class="row">
+      <div style="text-align:center">
+        <div style="width:80px;height:80px;border-radius:12px;background:var(--white);margin:0 auto 8px;border:1px solid var(--grey-light)"></div>
+        <div style="font-size:13px;font-weight:500">Background</div>
+        <div style="font-size:11px;color:var(--grey)">#fafaf9</div>
+      </div>
+      <div style="text-align:center">
+        <div style="width:80px;height:80px;border-radius:12px;background:var(--surface);margin:0 auto 8px;border:1px solid var(--grey-light)"></div>
+        <div style="font-size:13px;font-weight:500">Surface</div>
+        <div style="font-size:11px;color:var(--grey)">#ffffff</div>
+      </div>
+      <div style="text-align:center">
+        <div style="width:80px;height:80px;border-radius:12px;background:var(--subtle-bg);margin:0 auto 8px;border:1px solid var(--grey-light)"></div>
+        <div style="font-size:13px;font-weight:500">Subtle BG</div>
+        <div style="font-size:11px;color:var(--grey)">#f5f5f4</div>
+      </div>
+      <div style="text-align:center">
+        <div style="width:80px;height:80px;border-radius:12px;background:var(--grey-light);margin:0 auto 8px"></div>
+        <div style="font-size:13px;font-weight:500">Border</div>
+        <div style="font-size:11px;color:var(--grey)">#e7e5e4</div>
+      </div>
+      <div style="text-align:center">
+        <div style="width:80px;height:80px;border-radius:12px;background:var(--grey);margin:0 auto 8px"></div>
+        <div style="font-size:13px;font-weight:500">Muted</div>
+        <div style="font-size:11px;color:var(--grey)">#a8a29e</div>
+      </div>
+      <div style="text-align:center">
+        <div style="width:80px;height:80px;border-radius:12px;background:#d6d3d1;margin:0 auto 8px"></div>
+        <div style="font-size:13px;font-weight:500">Light Grey</div>
+        <div style="font-size:11px;color:var(--grey)">#d6d3d1</div>
+      </div>
+    </div>
+  </div>
+  <p class="note">Warm Stone palette. Purple is the accent, used sparingly. Black is the primary action color. Green for success/verified states only.</p>
+</div>
+
+<!-- 2. Typography -->
+<div class="section">
+  <div class="section-title">2. Typography</div>
+  <div style="margin-bottom:32px">
+    <p style="font-family:var(--font-display);font-size:clamp(48px,8vw,72px);font-weight:700;letter-spacing:-3px;line-height:0.95;text-transform:uppercase">Display XXL</p>
+    <p class="note">Space Grotesk 700 &middot; clamp(48px, 8vw, 96px) &middot; -3px tracking &middot; uppercase</p>
+  </div>
+  <div style="margin-bottom:32px">
+    <p style="font-family:var(--font-display);font-size:clamp(36px,6vw,48px);font-weight:700;letter-spacing:-2px;line-height:0.95;text-transform:uppercase">Display XL</p>
+    <p class="note">Space Grotesk 700 &middot; clamp(36px, 6vw, 64px) &middot; -2px tracking &middot; uppercase</p>
+  </div>
+  <div style="margin-bottom:32px">
+    <p style="font-family:var(--font-display);font-size:clamp(24px,4vw,32px);font-weight:700;letter-spacing:-1px;line-height:1;text-transform:uppercase">Display LG</p>
+    <p class="note">Space Grotesk 700 &middot; clamp(24px, 4vw, 40px) &middot; -1px tracking &middot; uppercase</p>
+  </div>
+  <div style="margin-bottom:32px">
+    <p style="font-family:var(--font-display);font-size:22px;font-weight:700;letter-spacing:-0.5px;text-transform:uppercase">Section Title</p>
+    <p class="note">Space Grotesk 700 &middot; 20-22px &middot; -0.5px tracking &middot; uppercase</p>
+  </div>
+  <div style="margin-bottom:32px">
+    <p style="font-family:var(--font-display);font-size:16px;font-weight:700;letter-spacing:-0.3px;text-transform:uppercase">Card Title</p>
+    <p class="note">Space Grotesk 700 &middot; 16px &middot; -0.3px tracking &middot; uppercase</p>
+  </div>
+  <div style="margin-bottom:32px">
+    <p style="font-size:17px;line-height:1.6;color:var(--grey)">Body text uses Inter at 15-17px with generous line height (1.6-1.7). Muted grey for secondary content, black for emphasis. Never justify text.</p>
+    <p class="note">Inter 400 &middot; 15-17px &middot; 1.6 line-height &middot; color: #a8a29e (muted) or #57534e (readable)</p>
+  </div>
+  <div>
+    <p style="font-size:13px;color:var(--grey);line-height:1.5">Small text for labels, captions, footnotes. Inter 400 or 500.</p>
+    <p class="note">Inter 400/500 &middot; 12-13px &middot; color: #a8a29e</p>
+  </div>
+</div>
+
+<!-- 3. Buttons -->
+<div class="section">
+  <div class="section-title">3. Buttons</div>
+  <div class="row" style="gap:12px;align-items:center">
+    <a href="#" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--font-body);font-weight:500;font-size:15px;border:none;cursor:pointer;text-decoration:none;border-radius:50px;background:var(--black);color:var(--white);padding:14px 28px">Primary</a>
+    <a href="#" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--font-body);font-weight:500;font-size:15px;border:1.5px solid var(--grey-light);cursor:pointer;text-decoration:none;border-radius:50px;background:none;color:var(--black);padding:14px 28px">Secondary</a>
+    <a href="#" style="font-family:var(--font-body);font-weight:500;font-size:14px;color:var(--black);border-bottom:1.5px solid var(--black);padding-bottom:2px;text-decoration:none">Text Link</a>
+  </div>
+  <p class="note">Pill shape (border-radius: 50px). Primary is black, hover purple. Secondary is outlined. Full-width on mobile (min-size: 100%, 50px). Inter 500, 15px.</p>
+</div>
+
+<!-- 4. Badges -->
+<div class="section">
+  <div class="section-title">4. Badges &amp; Tags</div>
+  <div class="row" style="gap:8px;align-items:center">
+    <span style="display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:50px;font-size:12px;font-weight:500;background:var(--purple-light);color:var(--purple);border:1.5px solid var(--purple-muted)">&#128312; eIDAS 2.0</span>
+    <span style="display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:50px;font-size:12px;font-weight:500;background:var(--green-light);color:#16a34a;border:1.5px solid #86efac">&#9679; Open Source</span>
+    <span style="display:inline-block;background:var(--green-light);color:var(--green);font-size:12px;font-weight:600;padding:4px 12px;border-radius:50px">biometricConfirmed</span>
+  </div>
+  <p class="note">Pill shape. Purple for info/tech badges, green for status/success. 12px font, 500-600 weight.</p>
+</div>
+
+<!-- 5. Cards -->
+<div class="section">
+  <div class="section-title">5. Cards</div>
+  <div class="row">
+    <div style="flex:1;border:1.5px solid var(--grey-light);border-radius:16px;padding:24px;background:var(--surface)">
+      <div style="font-family:var(--font-display);font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:8px">Card Title</div>
+      <p style="font-size:14px;color:var(--grey);line-height:1.6">Card content with muted text. No shadows, thin border only. 16px border-radius.</p>
+    </div>
+    <div style="flex:1;border:1.5px solid var(--grey-light);border-radius:12px;padding:24px;background:var(--surface);display:flex;gap:14px;align-items:flex-start">
+      <div style="width:4px;height:48px;background:var(--purple);border-radius:2px;flex-shrink:0"></div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--purple)">Credential Card</div>
+        <p style="font-size:13px;color:var(--grey);margin-top:4px">Left accent bar pattern (mobile app). 4px wide, credential color.</p>
+      </div>
+    </div>
+  </div>
+  <p class="note">No shadows. White surface with thin border (#e7e5e4). Radius: 16px (large), 12px (medium), 10px (small).</p>
+</div>
+
+<!-- 6. Stats -->
+<div class="section">
+  <div class="section-title">6. Stats</div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;text-align:center">
+    <div>
+      <div style="font-family:var(--font-display);font-size:64px;font-weight:700;letter-spacing:-2px;line-height:1">3<span style="font-size:36px">s</span></div>
+      <div style="color:var(--grey);font-size:14px;margin-top:4px">Verification time</div>
+    </div>
+    <div>
+      <div style="font-family:var(--font-display);font-size:64px;font-weight:700;letter-spacing:-2px;line-height:1">0</div>
+      <div style="color:var(--grey);font-size:14px;margin-top:4px">Personal data collected</div>
+    </div>
+    <div>
+      <div style="font-family:var(--font-display);font-size:64px;font-weight:700;letter-spacing:-2px;line-height:1">100<span style="font-size:36px">%</span></div>
+      <div style="color:var(--grey);font-size:14px;margin-top:4px">eIDAS 2.0</div>
+    </div>
+  </div>
+  <p class="note">Space Grotesk 700, 64px, -2px tracking. Unit suffixes at 36px. Label below in Inter 14px muted.</p>
+</div>
+
+<!-- 7. FAQ -->
+<div class="section">
+  <div class="section-title">7. FAQ Accordion</div>
+  <div style="max-width:600px">
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-top:1px solid var(--grey-light);border-bottom:1px solid var(--grey-light);cursor:pointer">
+      <span style="font-size:16px;font-weight:500">What data does idonce collect?</span>
+      <span style="font-size:18px;color:var(--grey)">&#9660;</span>
+    </div>
+    <div style="padding:0 0 20px;color:var(--grey);font-size:15px;line-height:1.6;border-bottom:1px solid var(--grey-light)">Almost nothing. A pseudonymous hash of your device key. No name, email, or biometric data leaves your device.</div>
+  </div>
+  <p class="note">Question: Inter 500, 16px. Answer: Inter 400, 15px, muted. Separated by thin borders. Arrow rotates on open.</p>
+</div>
+
+<!-- 8. Spacing -->
+<div class="section">
+  <div class="section-title">8. Spacing</div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;font-size:13px">
+    <div>
+      <div style="background:var(--purple-light);height:8px;border-radius:4px;margin-bottom:4px"></div>
+      <strong>8px</strong> — inline gap
+    </div>
+    <div>
+      <div style="background:var(--purple-light);height:12px;border-radius:4px;margin-bottom:4px"></div>
+      <strong>12px</strong> — tight spacing
+    </div>
+    <div>
+      <div style="background:var(--purple-light);height:16px;border-radius:4px;margin-bottom:4px"></div>
+      <strong>16px</strong> — card padding
+    </div>
+    <div>
+      <div style="background:var(--purple-light);height:24px;border-radius:4px;margin-bottom:4px"></div>
+      <strong>24px</strong> — section gap
+    </div>
+    <div>
+      <div style="background:var(--purple-light);height:32px;border-radius:4px;margin-bottom:4px"></div>
+      <strong>32px</strong> — grid gap
+    </div>
+    <div>
+      <div style="background:var(--purple-light);height:48px;border-radius:4px;margin-bottom:4px"></div>
+      <strong>48px</strong> — section padding
+    </div>
+    <div>
+      <div style="background:var(--purple-light);height:64px;border-radius:4px;margin-bottom:4px"></div>
+      <strong>64px</strong> — large gap
+    </div>
+    <div>
+      <div style="background:var(--purple-light);height:100px;border-radius:4px;margin-bottom:4px"></div>
+      <strong>100px</strong> — section padding (web)
+    </div>
+  </div>
+  <p class="note">Generous spacing throughout. Sections 100px padding (web), 48px (mobile). Max content width: 1080px (web), 680px (docs).</p>
+</div>
+
+<!-- 9. Code -->
+<div class="section">
+  <div class="section-title">9. Code Blocks</div>
+  <pre style="background:var(--black);color:#d4d4d4;border-radius:12px;padding:24px;font-family:var(--font-mono);font-size:13px;line-height:1.6;overflow-x:auto"><span style="color:#78716c"># Create verification session</span>
+curl -X POST /vp/sessions \
+  -d <span style="color:var(--purple-muted)">'{"client_id":"your-platform"}'</span>
+
+<span style="color:#78716c"># Response</span>
+{
+  <span style="color:#86efac">"status"</span>: <span style="color:var(--purple-muted)">"presented"</span>,
+  <span style="color:#86efac">"biometricConfirmed"</span>: <span style="color:var(--purple-muted)">true</span>
+}</pre>
+  <p style="margin-top:12px">Inline code: <code style="background:var(--purple-light);color:var(--purple);padding:2px 8px;border-radius:6px;font-family:var(--font-mono);font-size:13px">biometricConfirmed</code></p>
+  <p class="note">Dark background (#0a0a0a), 12px border-radius, 24px padding. SF Mono / Consolas, 13px. Syntax: muted for comments, purple for strings, green for keys.</p>
+</div>
+
+<!-- 10. Design Principles -->
+<div class="section">
+  <div class="section-title">10. Design Principles</div>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:32px">
+    <div>
+      <div style="font-family:var(--font-display);font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:4px">Minimal</div>
+      <p style="font-size:14px;color:var(--grey);line-height:1.6">No shadows, no gradients, no decorative elements. Thin borders and whitespace create hierarchy.</p>
+    </div>
+    <div>
+      <div style="font-family:var(--font-display);font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:4px">Bold Type</div>
+      <p style="font-size:14px;color:var(--grey);line-height:1.6">Space Grotesk uppercase headlines carry the visual weight. Body text stays quiet.</p>
+    </div>
+    <div>
+      <div style="font-family:var(--font-display);font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:4px">Generous Space</div>
+      <p style="font-size:14px;color:var(--grey);line-height:1.6">Sections breathe with 100px+ padding. Content never feels cramped. Mobile scales proportionally.</p>
+    </div>
+    <div>
+      <div style="font-family:var(--font-display);font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:4px">Purple Sparingly</div>
+      <p style="font-size:14px;color:var(--grey);line-height:1.6">Purple marks the accent — interactive elements, active states, emphasis. Black is the primary action color.</p>
+    </div>
+    <div>
+      <div style="font-family:var(--font-display);font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:4px">Warm Neutrals</div>
+      <p style="font-size:14px;color:var(--grey);line-height:1.6">Stone palette (#fafaf9, #e7e5e4, #a8a29e) instead of cold greys. Feels approachable without being playful.</p>
+    </div>
+    <div>
+      <div style="font-family:var(--font-display);font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:-0.3px;margin-bottom:4px">Pill Everything</div>
+      <p style="font-size:14px;color:var(--grey);line-height:1.6">Buttons, badges, tags, chips — all pill-shaped (50px radius). Cards use 12-16px radius. Inputs use 10px.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

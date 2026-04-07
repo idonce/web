@@ -1,0 +1,10 @@
+:9091
+
+root * /srv
+try_files {path}.html {path}
+file_server
+
+header {
+	X-Content-Type-Options "nosniff"
+	X-Frame-Options "SAMEORIGIN"
+}
