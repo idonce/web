@@ -97,7 +97,11 @@ func sidebarHTML(activePage string, sections []sidebarLink) string {
 		if l.id == activePage {
 			cls = ` class="active"`
 		}
-		s += "\n    <a href=\"" + l.href + "\"" + cls + ">" + l.label + "</a>"
+		ext := ""
+		if len(l.href) > 0 && l.href[0] != '/' {
+			ext = ` target="_blank" rel="noopener"`
+		}
+		s += "\n    <a href=\"" + l.href + "\"" + cls + ext + ">" + l.label + "</a>"
 		// Section links appear right after the active page link
 		if l.id == activePage && len(sections) > 0 {
 			for _, sec := range sections {
@@ -114,7 +118,11 @@ func sidebarHTML(activePage string, sections []sidebarLink) string {
 		if l.id == activePage {
 			cls = ` class="active"`
 		}
-		s += "\n    <a href=\"" + l.href + "\"" + cls + ">" + l.label + "</a>"
+		ext := ""
+		if len(l.href) > 0 && l.href[0] != '/' {
+			ext = ` target="_blank" rel="noopener"`
+		}
+		s += "\n    <a href=\"" + l.href + "\"" + cls + ext + ">" + l.label + "</a>"
 	}
 	s += `
   </div>

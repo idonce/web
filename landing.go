@@ -115,7 +115,7 @@ const landingBody = `<!-- Hero -->
   <p class="txt">Free, open-source human verification. No passwords, no CAPTCHAs, no personal data. For everyone.</p>
   <div class="btns">
     <a href="#demo" class="btn btn-p">See it in Action</a>
-    <a href="https://github.com/idonce" class="btn btn-s">&#9733; View on GitHub</a>
+    <a href="https://github.com/idonce" class="btn btn-s" target="_blank" rel="noopener">&#9733; View on GitHub</a>
   </div>
 </div>
 </section>
@@ -177,7 +177,7 @@ const landingBody = `<!-- Hero -->
   <div class="demo-box">
     <h3>Verify you're human</h3>
     <p class="txt-sm" style="margin-bottom:20px">Scan a QR code, confirm with biometrics, done. No passwords, no personal data.</p>
-    <a href="/demo" class="btn btn-p" style="width:100%;justify-content:center">Try the Live Demo</a>
+    <a href="/demo" class="btn btn-p" style="width:100%;justify-content:center" target="_blank" rel="noopener">Try the Live Demo</a>
   </div>
 </div>
 </section>
@@ -314,7 +314,7 @@ curl https://www.idonce.com/vp/sessions/<span class="s">vp_a1b2c3...</span>
   </div>
   <div style="display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap">
     <a href="/developers" class="btn btn-p">Full Documentation</a>
-    <a href="https://github.com/idonce" class="btn btn-s">GitHub</a>
+    <a href="https://github.com/idonce" class="btn btn-s" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div>
 </section>
@@ -370,7 +370,7 @@ curl https://www.idonce.com/vp/sessions/<span class="s">vp_a1b2c3...</span>
   <p class="txt" style="margin:20px auto 0;text-align:center">Open source. Free forever. No vendor lock-in.</p>
   <div style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
     <a href="#demo" class="btn btn-p" style="background:var(--purple)">See it in Action</a>
-    <a href="https://github.com/idonce" class="btn btn-s">View on GitHub</a>
+    <a href="https://github.com/idonce" class="btn btn-s" target="_blank" rel="noopener">View on GitHub</a>
   </div>
 </div>
 </section>`

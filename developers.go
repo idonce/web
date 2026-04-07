@@ -344,7 +344,7 @@ BASE_URL=https://verify.example.com go run .</pre>
   <h2>Ready to integrate?</h2>
   <p>No signup needed. Just start making API calls.</p>
   <div class="btns">
-    <a href="https://github.com/idonce" class="btn btn-p">View on GitHub</a>
+    <a href="https://github.com/idonce" class="btn btn-p" target="_blank" rel="noopener">View on GitHub</a>
     <a href="/#demo" class="btn btn-s">Try the Demo</a>
   </div>
 </div>
