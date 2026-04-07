@@ -1,5 +1,9 @@
 :9091
 
+handle /health {
+	respond "OK" 200
+}
+
 root * /srv
 try_files {path}.html {path}
 file_server
