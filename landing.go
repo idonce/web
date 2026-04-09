@@ -164,14 +164,14 @@ const landingBody = `<!-- Hero -->
 
   <!-- App Store badges -->
   <div style="display:flex;gap:12px;justify-content:center;margin:28px 0 36px;flex-wrap:wrap">
-    <a href="#" style="display:inline-block;background:var(--black);color:var(--white);padding:10px 20px;border-radius:10px;text-decoration:none;display:flex;align-items:center;gap:10px">
+    <a href="https://apps.apple.com/us/app/idonce/id6761532271" target="_blank" rel="noopener" style="display:inline-block;background:var(--black);color:var(--white);padding:10px 20px;border-radius:10px;text-decoration:none;display:flex;align-items:center;gap:10px">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
       <div style="text-align:left;line-height:1.2"><div style="font-size:10px;opacity:0.7">Download on the</div><div style="font-size:15px;font-weight:600">App Store</div></div>
     </a>
-    <a href="#" style="display:inline-block;background:var(--black);color:var(--white);padding:10px 20px;border-radius:10px;text-decoration:none;display:flex;align-items:center;gap:10px">
+    <div title="Coming soon" style="display:inline-block;background:var(--black);color:var(--white);padding:10px 20px;border-radius:10px;display:flex;align-items:center;gap:10px;opacity:0.5;cursor:not-allowed">
       <svg width="20" height="22" viewBox="0 0 20 22" fill="none"><path d="M1 1.56v18.88c0 .56.3.73.67.38L11 11.5 1.67 1.18C1.3.83 1 1 1 1.56z" fill="#4285F4"/><path d="M14.5 8L11 11.5l3.5 3.5 4-2.3c.67-.38.67-1.02 0-1.4L14.5 8z" fill="#FBBC04"/><path d="M1.67 1.18L11 11.5l3.5-3.5L5.17.27C4.5-.12 3.83-.05 3.17.35L1.67 1.18z" fill="#34A853"/><path d="M1.67 21.82L11 11.5 14.5 15l-9.33 5.73c-.67.4-1.33.47-2 .1L1.67 21.82z" fill="#EA4335"/></svg>
-      <div style="text-align:left;line-height:1.2"><div style="font-size:10px;opacity:0.7">Get it on</div><div style="font-size:15px;font-weight:600">Google Play</div></div>
-    </a>
+      <div style="text-align:left;line-height:1.2"><div style="font-size:10px;opacity:0.7">Coming soon</div><div style="font-size:15px;font-weight:600">Google Play</div></div>
+    </div>
   </div>
 
   <div class="demo-box">
